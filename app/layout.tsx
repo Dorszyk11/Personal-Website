@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Tymoteusz Tymendorf - CV",
   description: "CV Tymoteusza Tymendorfa - Fullstack Developer & AI Engineer",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
