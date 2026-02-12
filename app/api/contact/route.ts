@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
+/** Adres, na który zawsze trafia podsumowanie z formularza (dane osoby, która wysłała). */
+const CONTACT_FORM_RECIPIENT = "tymbeixpoi@gmail.com";
+
 function getTransporter() {
   const host = process.env.SMTP_HOST;
   const port = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined;
@@ -39,14 +42,13 @@ export async function POST(request: Request) {
       );
     }
 
-    const toEmail = process.env.TO_EMAIL || process.env.SMTP_USER!;
     const fromEmail = process.env.SMTP_USER!;
     const fromAddress = `Formularz kontaktowy <${fromEmail}>`;
 
-    // 1) Mail do Ciebie
+    // 1) Mail na tymbeixpoi@gmail.com – dane osoby, która wypełniła formularz
     await transporter.sendMail({
       from: fromAddress,
-      to: toEmail,
+      to: CONTACT_FORM_RECIPIENT,
       replyTo: email,
       subject: `Firma: ${escapeHtml(company.trim())} — wiadomość z formularza`,
       html: `
