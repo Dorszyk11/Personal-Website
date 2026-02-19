@@ -29,7 +29,7 @@ export const translations = {
       fullstack: {
         title: "Fullstack Developer",
         company: "Exeib | Warsaw / Wrocław",
-        period: "05.2026 – present",
+        period: "05.2025 – present",
         items: [
           "Designing and developing software for Tauron based on Koni",
           "Creating backend logic and user interfaces",
@@ -82,7 +82,7 @@ export const translations = {
     },
     contact: {
       title: "CONTACT",
-      formHeading: "Leave your contact – we'll get back within 24h!",
+      formHeading: "Leave your contact – I'll get back within 24h!",
       name: "Name",
       email: "Email",
       phone: "Phone",
@@ -94,7 +94,7 @@ export const translations = {
       companyPlaceholder: "Company name",
       send: "Send",
       sending: "Sending...",
-      success: "Message sent. We'll get back to you within 24h!",
+      success: "Message sent. I'll get back to you within 24h!",
       error: "Something went wrong. Please try again or contact us by email.",
     },
     footer: "©",
@@ -129,7 +129,7 @@ export const translations = {
       fullstack: {
         title: "Fullstack Developer",
         company: "Exeib | Warszawa / Wrocław",
-        period: "05.2026 – obecnie",
+        period: "05.2025 – obecnie",
         items: [
           "Projektowanie i rozwój oprogramowania dla Tauron opartego na Koni",
           "Tworzenie logiki backendowej oraz interfejsów użytkownika",
@@ -182,7 +182,7 @@ export const translations = {
     },
     contact: {
       title: "KONTAKT",
-      formHeading: "Zostaw do siebie kontakt – odezwiemy się w 24h!",
+      formHeading: "Zostaw do siebie kontakt – odezwę się w 24h!",
       name: "Imię",
       email: "Email",
       phone: "Telefon",
@@ -194,7 +194,7 @@ export const translations = {
       companyPlaceholder: "Nazwa firmy",
       send: "Wyślij",
       sending: "Wysyłanie...",
-      success: "Wiadomość wysłana. Odezwiemy się w ciągu 24h!",
+      success: "Wiadomość wysłana. Odezwę się w ciągu 24h!",
       error: "Coś poszło nie tak. Spróbuj ponownie lub napisz na email.",
     },
     footer: "©",
